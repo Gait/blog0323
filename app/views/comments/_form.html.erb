@@ -12,8 +12,9 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br>
+    <%= f.label :title, 'Comment Title' %><br>
     <%= f.text_field :title %>
+    <%= f.hidden_field :post_id %>
   </div>
   <div class="actions">
     <%= f.submit %>
